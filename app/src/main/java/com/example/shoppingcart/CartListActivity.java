@@ -33,18 +33,18 @@ public class CartListActivity extends AppCompatActivity {
         FloatingActionButton addNewCart = findViewById(R.id.addNewCartButton);
 
         //create shopping carts
-        ShoppingCart cart1 = new ShoppingCart("cart1", 12, false);
-        ShoppingCart cart2 = new ShoppingCart("cart2", 20, false);
-        ShoppingCart cart3 = new ShoppingCart("cart3", 43, false);
-        ShoppingCart cart4 = new ShoppingCart("cart4", 0, false);
-        ShoppingCart cart5 = new ShoppingCart("cart5", 50, true);
-        ShoppingCart cart6 = new ShoppingCart("cart6", 70, true);
-        ShoppingCart cart7 = new ShoppingCart("cart7", 100, true);
-        ShoppingCart cart8 = new ShoppingCart("cart8", 65, false);
-        ShoppingCart cart9 = new ShoppingCart("cart9", 32, false);
-        ShoppingCart cart10 = new ShoppingCart("cart10", 14, false);
-        ShoppingCart cart11 = new ShoppingCart("cart11", 40, true);
-        ShoppingCart cart12 = new ShoppingCart("cart12", 7, false);
+        ShoppingCart cart1 = new ShoppingCart(0,"cart1", 12, false);
+        ShoppingCart cart2 = new ShoppingCart(1,"cart2", 20, false);
+        ShoppingCart cart3 = new ShoppingCart(2,"cart3", 43, false);
+        ShoppingCart cart4 = new ShoppingCart(3,"cart4", 0, false);
+        ShoppingCart cart5 = new ShoppingCart(4,"cart5", 50, true);
+        ShoppingCart cart6 = new ShoppingCart(5,"cart6", 70, true);
+        ShoppingCart cart7 = new ShoppingCart(6,"cart7", 100, true);
+        ShoppingCart cart8 = new ShoppingCart(7,"cart8", 65, false);
+        ShoppingCart cart9 = new ShoppingCart(8,"cart9", 32, false);
+        ShoppingCart cart10 = new ShoppingCart(9,"cart10", 14, false);
+        ShoppingCart cart11 = new ShoppingCart(10,"cart11", 40, true);
+        ShoppingCart cart12 = new ShoppingCart(11,"cart12", 7, false);
 
         ArrayList<ShoppingCart> shoppingCartList = new ArrayList<>();
 
@@ -93,10 +93,12 @@ public class CartListActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        //opens the cartFormActivity
         addNewCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(CartListActivity.this, "Add new cart", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(CartListActivity.this, CartFormActivity.class);
+                startActivity(intent);
             }
         });
 

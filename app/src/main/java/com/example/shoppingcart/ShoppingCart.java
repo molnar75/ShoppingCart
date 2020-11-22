@@ -4,8 +4,10 @@ public class ShoppingCart {
     private String name;
     private int percentage;
     private boolean isItDone;
+    private int id;
 
-    public ShoppingCart(String name, int percentage, boolean isItDone) {
+    public ShoppingCart(int id, String name, int percentage, boolean isItDone) {
+        this.id = id;
         this.name = name;
         this.percentage = percentage;
         this.isItDone = isItDone;
@@ -33,5 +35,13 @@ public class ShoppingCart {
 
     public void setItDone(boolean itDone) {
         isItDone = itDone;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
