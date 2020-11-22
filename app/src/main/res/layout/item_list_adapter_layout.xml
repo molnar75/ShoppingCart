@@ -29,6 +29,14 @@
             android:gravity="start|left|center_vertical"
             android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/itemDescription"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="30"
+            android:gravity="start|center_vertical"
+            android:textStyle="bold" />
+
         <CheckBox
             android:id="@+id/cartCheckbox"
             android:layout_width="wrap_content"

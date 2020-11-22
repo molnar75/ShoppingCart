@@ -67,14 +67,14 @@ public class CartListActivity extends AppCompatActivity {
         ArrayList<CartItem> cartItemList = new ArrayList<>();
 
         //create some items to carts
-        CartItem item1 = new CartItem("cart1", "item1", 1, false);
-        CartItem item2 = new CartItem("cart1", "item2", 2, false);
-        CartItem item3 = new CartItem("cart1", "item3", 5, false);
-        CartItem item4 = new CartItem("cart2", "item4", 1, true);
-        CartItem item5 = new CartItem("cart2", "item5", 3, false);
-        CartItem item6 = new CartItem("cart3", "item6", 1, false);
-        CartItem item7 = new CartItem("cart3", "item7", 1, true);
-        CartItem item8 = new CartItem("cart4", "item8", 4, false); //TODO comment
+        CartItem item1 = new CartItem("cart1", "item1","Some details", 1, false);
+        CartItem item2 = new CartItem("cart1", "item2","",2, false);
+        CartItem item3 = new CartItem("cart1", "item3","Something important",5, false);
+        CartItem item4 = new CartItem("cart2", "item4","",1, true);
+        CartItem item5 = new CartItem("cart2", "item5","",3, false);
+        CartItem item6 = new CartItem("cart3", "item6","",1, false);
+        CartItem item7 = new CartItem("cart3", "item7","",1, true);
+        CartItem item8 = new CartItem("cart4", "item8","",4, false);
 
         cartItemList.add(item1);
         cartItemList.add(item2);

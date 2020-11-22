@@ -45,6 +45,7 @@ public class CartItemListAdapter extends ArrayAdapter<CartItem> {
         //get the cart information
         String name = getItem(position).getName();
         String quantity = String.valueOf(getItem(position).getQuantity());
+        String description = String.valueOf(getItem(position).getDescription());
         Boolean isItDone = getItem(position).isItDone();
 
         LayoutInflater inflater = LayoutInflater.from(mContext);
@@ -52,6 +53,7 @@ public class CartItemListAdapter extends ArrayAdapter<CartItem> {
 
         TextView tvName = convertView.findViewById(R.id.itemName);
         TextView tvQuantity = convertView.findViewById(R.id.itemQuantity);
+        TextView tvDescription = convertView.findViewById(R.id.itemDescription);
         CheckBox checkBox = convertView.findViewById(R.id.cartCheckbox);
         ImageButton itemMenu = convertView.findViewById(R.id.itemMenu);
 
@@ -60,6 +62,7 @@ public class CartItemListAdapter extends ArrayAdapter<CartItem> {
 
         tvName.setText(name);
         tvQuantity.setText(quantity);
+        tvDescription.setText(description);
         checkBox.setChecked(isItDone);
 
         itemMenu.setOnClickListener(new View.OnClickListener() {
@@ -99,7 +102,7 @@ public class CartItemListAdapter extends ArrayAdapter<CartItem> {
     }
 
     private void addItemToList(String itemName, boolean isChecked) {
-        CartItem itemToChange = new CartItem("", "", 0, false);
+        CartItem itemToChange = new CartItem("", "", "",0, false);
         for (CartItem item: itemList) {
             if(item.getName().equals(itemName)) {
                 itemToChange = item;

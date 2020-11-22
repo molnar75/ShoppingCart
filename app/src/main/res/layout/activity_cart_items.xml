@@ -46,8 +46,16 @@
             android:layout_weight="20"
             android:gravity="start|center_vertical"
             android:text="Quantity"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="30"
+            android:gravity="start|center_vertical"
+            android:text="Description"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/itemCheckboxHeader"
