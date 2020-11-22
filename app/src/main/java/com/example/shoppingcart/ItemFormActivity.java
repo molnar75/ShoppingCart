@@ -34,9 +34,9 @@ public class ItemFormActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String newItemName = etName.getText().toString();
                 String newItemQuantity = etQuantity.getText().toString();
-                String newDescription = etDescription.getText().toString();
+                String newDescription = etDescription.getText().toString(); //not required
 
-                if(validation(newItemName, newItemQuantity, newDescription, etName, etQuantity, etDescription)) {
+                if(validation(newItemName, newItemQuantity, etName, etQuantity)) {
                     Toast.makeText(ItemFormActivity.this, "Add new item", Toast.LENGTH_SHORT).show();
                 }
                 // TODO új elem hozzáadása a backendhez
@@ -46,7 +46,7 @@ public class ItemFormActivity extends AppCompatActivity {
     }
 
     //Returns false if one of the data is empty
-    Boolean validation(String newItemName, String newItemQuantity, String newDescription, EditText etName, EditText etQuantity, EditText etDescription) {
+    Boolean validation(String newItemName, String newItemQuantity, EditText etName, EditText etQuantity) {
         Boolean validationIsOk = true;
 
         if(newItemName.isEmpty()) {
@@ -57,11 +57,6 @@ public class ItemFormActivity extends AppCompatActivity {
         if(newItemQuantity.isEmpty()) {
             validationIsOk = false;
             etQuantity.setError("This field is required!");
-        }
-
-        if(newDescription.isEmpty()) {
-            validationIsOk = false;
-            etDescription.setError("This field is required!");
         }
 
         return validationIsOk;
