@@ -17,7 +17,7 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_marginLeft="5dp"
-            android:layout_weight="30"
+            android:layout_weight="28"
             android:gravity="start|center_vertical"
             android:textStyle="bold" />
 
@@ -25,7 +25,7 @@
             android:id="@+id/itemQuantity"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:layout_weight="15"
+            android:layout_weight="17"
             android:gravity="start|center_vertical"
             android:textStyle="bold" />
 
@@ -35,14 +35,15 @@
             android:layout_height="60dp"
             android:layout_weight="30"
             android:gravity="start|center_vertical"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:singleLine="true"/>
 
         <CheckBox
             android:id="@+id/cartCheckbox"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="10"
-            android:focusable="false" />
+            android:focusable="false"/>
 
         <ImageButton
             android:id="@+id/itemMenu"
