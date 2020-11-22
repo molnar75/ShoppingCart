@@ -27,7 +27,6 @@
             android:layout_height="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="5dp"
-            android:text="TestcartName"
             android:textStyle="bold"
             android:textSize="18sp"/>
 
@@ -53,7 +52,7 @@
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:text="Quantity of the item:"
+            android:text="Quantity:"
             android:textSize="20sp"/>
 
         <EditText
@@ -64,6 +63,22 @@
             android:layout_marginRight="30dp"
             android:ems="10"
             android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/itemDescriptionHeaderItemForm"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Description:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/itemDescriptionItemForm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
 
         <Button
             android:id="@+id/addNewButtonItemForm"
