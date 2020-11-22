@@ -19,29 +19,28 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="20"
-            app:srcCompat="@drawable/cart_black"
-            android:layout_marginLeft="10dp"/>
+            app:srcCompat="@drawable/cart_black" />
 
         <TextView
             android:id="@+id/cartName"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_marginLeft="10dp"
-            android:layout_weight="50"
+            android:layout_weight="30"
             android:gravity="start|left|center_vertical"
             android:textStyle="bold" />
 
         <CheckBox
             android:id="@+id/cartCheckbox"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="60dp"
-            android:layout_weight="20"
+            android:layout_weight="30"
             android:focusable="false"
             />
 
         <ImageButton
             android:id="@+id/cartMenu"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="60dp"
             android:src="@drawable/ic_baseline_more_vert_24"
             android:background="@android:color/transparent"

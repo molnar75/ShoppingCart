@@ -30,32 +30,49 @@
 
         <TextView
             android:id="@+id/cartImageHeader"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="20"
-            android:text=""
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="start|left|center_vertical"/>
 
         <TextView
             android:id="@+id/cartNameHeader"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_marginLeft="10dp"
-            android:layout_weight="50"
+            android:layout_weight="30"
             android:gravity="start|left|center_vertical"
-            android:text="Name of the cart"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:text="Name"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/cartCheckboxHeader"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="60dp"
-            android:layout_weight="20"
+            android:layout_weight="30"
             android:gravity="start|left|center_vertical"
-            android:text="Is it done"
+            android:text="Done"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="10"
             android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:gravity="start|left|center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
 
     </LinearLayout>
 
