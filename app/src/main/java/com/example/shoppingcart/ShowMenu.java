@@ -6,12 +6,12 @@ import android.view.View;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
-public class ShowPopup implements PopupMenu.OnMenuItemClickListener{
+public class ShowMenu implements PopupMenu.OnMenuItemClickListener{
 
     Context context;
     Object object;
 
-    public void showPopup(View v, Context myContext, Object myObject) {
+    public void showMenu(View v, Context myContext, Object myObject) {
 
         this.context = myContext;
         this.object = myObject;

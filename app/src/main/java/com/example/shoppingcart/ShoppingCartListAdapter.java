@@ -3,15 +3,12 @@ package com.example.shoppingcart;
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
-import android.widget.PopupMenu;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,7 +20,7 @@ public class ShoppingCartListAdapter extends ArrayAdapter<ShoppingCart> {
 
     private Context mContext;
     int mResource;
-    ShowPopup showPopup = new ShowPopup();
+    ShowMenu showMenu = new ShowMenu();
 
     public ShoppingCartListAdapter(@NonNull Context context, int resource, @NonNull ArrayList<ShoppingCart> objects) {
         super(context, resource, objects);
@@ -59,7 +56,7 @@ public class ShoppingCartListAdapter extends ArrayAdapter<ShoppingCart> {
             @Override
             public void onClick(View v) {
                 ShoppingCart cart = getItem(position);
-                showPopup.showPopup(v, mContext, cart);
+                showMenu.showMenu(v, mContext, cart);
             }
         });
 

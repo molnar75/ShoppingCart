@@ -25,7 +25,7 @@ public class CartItemListAdapter extends ArrayAdapter<CartItem> {
 
     private Context mContext;
     int mResource;
-    ShowPopup showPopup = new ShowPopup();
+    ShowMenu showMenu = new ShowMenu();
     ArrayList<CartItem> itemList;
     ArrayList<CartItem> itemsToChange = new ArrayList();
 
@@ -69,7 +69,7 @@ public class CartItemListAdapter extends ArrayAdapter<CartItem> {
             @Override
             public void onClick(View v) {
                 CartItem item = getItem(position);
-                showPopup.showPopup(v, mContext, item);
+                showMenu.showMenu(v, mContext, item);
             }
         });
 
