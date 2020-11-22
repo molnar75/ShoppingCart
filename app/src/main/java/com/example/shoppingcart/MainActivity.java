@@ -102,7 +102,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //TODO regisztrációs ablak
-    //TODO cart hozzáadása
-    //TODO információs ablak
     //TODO bónusz nyelviesítés
 }
