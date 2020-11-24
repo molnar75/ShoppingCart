@@ -63,7 +63,7 @@ public class ShoppingCartListAdapter extends ArrayAdapter<ShoppingCart> {
 
         tvName.setText(name);
         checkBox.setText("(" + percentage + "%)");
-        checkBox.setChecked(isItDone); //TODO chekbox változás implementálás
+        checkBox.setChecked(isItDone);
 
         cartMenu.setOnClickListener(new View.OnClickListener() {
             @Override

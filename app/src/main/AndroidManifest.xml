@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShoppingCart">
-        <activity android:name=".CartFormActivity"></activity>
-        <activity android:name=".CartListActivity"></activity>
+        <activity android:name=".RegisterFormActivity"></activity>
+        <activity android:name=".CartFormActivity" />
+        <activity android:name=".CartListActivity" />
         <activity android:name=".ItemFormActivity" /> <!-- TODO a szülője a cartItemListActivity legyen, de jelenleg összeomlik mert üres az intent -->
         <activity
             android:name=".MainActivity"

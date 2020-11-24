@@ -58,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
             registerButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(MainActivity.this, "Register", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, RegisterFormActivity.class);
+                    startActivity(intent);
                 }
             });
         }
@@ -101,6 +102,6 @@ public class MainActivity extends AppCompatActivity {
         return validationIsOk;
     }
 
-    //TODO regisztrációs ablak
+    //TODO confirmation popup style változtatása
     //TODO bónusz nyelviesítés
 }
