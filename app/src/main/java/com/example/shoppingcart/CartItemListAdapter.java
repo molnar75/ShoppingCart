@@ -18,6 +18,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 
 public class CartItemListAdapter extends ArrayAdapter<CartItem> {
@@ -57,8 +59,8 @@ public class CartItemListAdapter extends ArrayAdapter<CartItem> {
         CheckBox checkBox = convertView.findViewById(R.id.cartCheckbox);
         ImageButton itemMenu = convertView.findViewById(R.id.itemMenu);
 
-        ViewGroup buttonView = (ViewGroup) parent.getParent(); //get the linearLayout where the button is
-        Button saveButton = buttonView.findViewById(R.id.saveItemStatus);
+        ViewGroup buttonView = (ViewGroup) parent.getParent().getParent(); //get the linearLayout where the button is
+        FloatingActionButton saveButton = buttonView.findViewById(R.id.saveItemStatusButton);
 
         tvName.setText(name);
         tvQuantity.setText(quantity);

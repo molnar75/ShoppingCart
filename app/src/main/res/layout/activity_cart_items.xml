@@ -13,8 +13,8 @@
         android:id="@+id/addNewItemButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         android:clickable="true"
         android:src="@android:drawable/ic_input_add"
         app:backgroundTint="#294C60"
@@ -22,6 +22,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:tint="@android:color/white"
         android:focusable="false"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveItemStatusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_check_24"
+        app:tint="@android:color/white"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -107,10 +121,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="60dp"
         android:orientation="vertical"
-        android:weightSum="100"
         app:layout_constraintTop_toTopOf="parent">
 
         <ListView
@@ -118,18 +131,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout_editor_absoluteX="90dp"
-            tools:layout_editor_absoluteY="105dp"/>
-
-        <Button
-            android:id="@+id/saveItemStatus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginRight="10dp"
-            android:layout_weight="60"
-            android:text="Save"
-            android:visibility="invisible"
-            android:focusable="false"/>
+            tools:layout_editor_absoluteY="105dp" />
 
     </LinearLayout>
 

@@ -77,6 +77,14 @@ public class CartListActivity extends AppCompatActivity {
         CartItem item8 = new CartItem("cart4", "item8","",4, false);
 
         cartItemList.add(item1);
+        cartItemList.add(item1);
+        cartItemList.add(item1);
+        cartItemList.add(item1);
+        cartItemList.add(item1);
+        cartItemList.add(item1);
+        cartItemList.add(item1);
+        cartItemList.add(item1);
+        cartItemList.add(item1);
         cartItemList.add(item2);
         cartItemList.add(item3);
         cartItemList.add(item4);
